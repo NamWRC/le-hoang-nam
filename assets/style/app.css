@@ -1,0 +1,137 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;600;700&display=swap");
+:root {
+    --brownish-grey: #666666;
+}
+body {
+    width: 100%;
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.wrap {
+    margin-top: 5%;
+    display: flex;
+    min-width: 70%;
+    justify-content: center;
+}
+.main-tittle {
+    height: 214px;
+    max-width: 428px;
+    margin-right: 87px;
+}
+.Line-4 {
+    width: 40%;
+    height: 2px;
+    background-color: #e03116;
+    margin-bottom: 29px;
+}
+.main-tittle-content {
+    width: 100%;
+    font-size: 36px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.33;
+    letter-spacing: -0.29px;
+    text-align: left;
+    color: #1f2c40;
+}
+.info-wraper {
+    display: flex;
+    flex-direction: column;
+}
+.row {
+    display: flex;
+    width: 100%;
+    margin-bottom: 37px;
+}
+.info:nth-child(1) {
+    margin-right: 88px;
+}
+.info {
+    max-width: 273px;
+}
+.info .tittle {
+    width: 100%;
+    font-family: Poppins;
+    font-size: 24px;
+    font-weight: 600;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.17;
+    letter-spacing: -0.19px;
+    text-align: left;
+    color: #1f2c40;
+}
+.info .content {
+    width: 100%;
+    margin: 7px 0 0;
+    font-family: Poppins;
+    font-size: 18px;
+    font-weight: 300;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.33;
+    letter-spacing: -0.14px;
+    text-align: left;
+    color: var(--brownish-grey);
+}
+@media (max-width: 1025px) {
+    .wrap {
+        flex-direction: column;
+        width: 80%;
+    }
+    .main-tittle {
+        max-width: 100%;
+        width: 100%;
+    }
+    .info-wraper {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .row {
+        max-width: unset;
+        width: 90%;
+    }
+    .info {
+        max-width: unset;
+        width: 50%;
+    }
+}
+@media (max-width: 769px) {
+    .wrap {
+        flex-direction: column;
+        width: 70%;
+    }
+    .main-tittle {
+        max-width: 100%;
+        max-height: 168.5px;
+        padding-bottom: 16px;
+        overflow: hidden;
+        width: 100%;
+    }
+    .info-wraper {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .row {
+        max-width: unset;
+        width: 100%;
+        flex-direction: column;
+        margin-bottom: unset;
+    }
+    .info {
+        max-width: unset;
+        width: 96%;
+        margin-top: 64.1px;
+    }
+    .info .tittle {
+        margin-bottom: 7px;
+    }
+}
